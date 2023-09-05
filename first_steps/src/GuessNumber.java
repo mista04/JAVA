@@ -7,7 +7,7 @@ public class GuessNumber {
         Scanner scanner = new Scanner(System.in);
 
         // Create de number of attempts.
-        int attemps = 0;
+        int attempts = 0;
 
         System.out.println("Max number for guess: ");
         int maxNumber = scanner.nextInt();
@@ -19,7 +19,7 @@ public class GuessNumber {
         // Loop game
         System.out.println("Guess the number between 1 and " + maxNumber);
 
-        while (attemps < 6){
+        while (attempts < 6){
             System.out.println("Try to guess: ");
             int guess = scanner.nextInt();
 
@@ -29,7 +29,7 @@ public class GuessNumber {
 
             } else {
                 System.out.println("Try it again...");
-                attemps++;
+                attempts++;
             }
             
 
