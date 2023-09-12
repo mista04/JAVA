@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Employee {
     // Variable set
     String name;
+    String lastName;
     int age;
     String department;
 
@@ -11,8 +12,9 @@ public class Employee {
     Scanner scanner = new Scanner(System.in);
 
     // Principal Function
-    Employee(String name,int age, String department){
+    Employee(String name,String lastName,int age, String department){
         this.name = name;
+        this.lastName = lastName;
         this.age = age;
         this.department = department;
     }
@@ -22,7 +24,7 @@ public class Employee {
         String searchedName = scanner.nextLine();
 
         if (Objects.equals(searchedName, this.name)){
-            System.out.println("Results: " + this.name);
+            System.out.println("Results: " + this.lastName + ", " + this.name + ", Age: " + this.age);
         }
     }
 
