@@ -10,8 +10,7 @@ public class Main {
         };
 
         // Call the function "Employee"
-        Employee employee_1 = new Employee("Rick","Sanchez",34,"Selling");
-        employee_1.search();
+        Employee employee_1 = new Employee("Rick",34,"Selling");
 
     }
 }
